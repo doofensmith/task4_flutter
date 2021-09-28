@@ -15,6 +15,14 @@ class HomePage extends StatelessWidget {
         ),
       ),
       body: HomeContent(),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.pushNamed(context, '/editor');
+        },
+        child: const Icon(
+          Icons.add,
+        ),
+      ),
     );
   }
 }
